@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Musify</title>
     <link rel="icon" type="image/png" href="imagesite/M.png">
-    <link rel="stylesheet" type="text/css" href="profil.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/css/multi-select-tag.css">
+    <link rel="stylesheet" href="profil.css">
+
 </head>
 <body>
     <header>
@@ -41,17 +40,22 @@
     </header>
     <div id="containergrand">
         <img src="musicienn.png" alt="Musicien Image">
-        <label for="Nom">Nom :</label>
-        <input type="text" id="Nom" name="Nom" placeholder="Nom en majuscules" />
-        <label for="Prénom">Prénom :</label>
-        <input type="text" id="Prénom" name="Prénom" placeholder="Prénom" />
-        <label for="Lieu de résidence">Lieu de résidence :</label>
-        <input type="text" id="lieu" name="lieu" placeholder="Lieu de résidence" />
-        <label for="Instrument">Instrument :</label>
-        <input type="text" id="Instrument" name="Instrument" placeholder="Instrument" />
-    </div>
+            <div class="input-container">
+                <input type="text" id="Nom" name="Nom" placeholder="Nom :" />
+                <input type="text" id="Prénom" name="Prénom" placeholder="Prénom :" />
+                <input type="text" id="lieu" name="lieu" placeholder="Lieu de résidence :" />
+                <input type="text" id="Instrument" name="Instrument" placeholder="Instrument :" />
+                <label for="status"> Choisir un status :</label>
+                <select id="choixStatus" name="status" placeholder="Choisir un status :">
+                    <option value="amateur"> amateur</option>
+                    <option value="pro"> professionnel</option>
+                </select>
+                <input type="text" id="Tarif" name="Tarif" placeholder="Tarif :" />
+                <input type="text" id="Groupe" name="Groupe" placeholder="Groupe :" />
+                <textarea id="bio" placeholder="Description :" rows="5" cols="40"></textarea>
+            </div>
+      </div> 
     <br>
-    <div id="basdepage"></div>
     <footer>
         <div class="pied-de-page">
             <a href="#">
